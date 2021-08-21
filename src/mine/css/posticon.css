@@ -1,0 +1,26 @@
+.postoptcontainer{
+    margin-top: 10px;
+    padding: 5px;
+}
+.opicons{
+    display: flex;
+    align-items: center;
+    padding: 0px 8px 0px 8px;       
+}
+
+.opicons:hover{
+    border: white;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    cursor: pointer;
+  
+}
+
+.opicon{
+    opacity: 45% !important;
+    
+}
+.opicons>p{
+    padding: 0%;
+    margin: 6px;
+}

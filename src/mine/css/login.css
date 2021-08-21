@@ -1,0 +1,81 @@
+.loginpage{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 8.3% 20% 5% 20% ;
+    background-color: whitesmoke;
+    align-items: center;
+    
+}
+
+.login{
+    background-color: white ;
+    display: flex;
+    flex-direction: column;
+  
+    padding: 8%;
+    max-width:400px;
+}
+.loginform>form{
+    display: flex;
+    flex-direction: column;
+}
+.loginform>form>button{}
+
+.loginform>form>input{
+    padding:10px;
+    font-size: 13px;
+    margin: 10px 0 10px 0;
+}
+.opt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opt>button {
+    color:rgb(84, 84, 230);
+    cursor: pointer;
+    border: none;
+    background-color:white;
+}
+.opt>button:hover{
+   text-decoration:underline;
+}
+
+.register{
+   
+    background-color: white ;
+    display: flex;
+    flex-direction: column;
+    border: black solid;
+    padding: 8%;
+    max-width:400px;
+}
+.registerform>form{
+    display: flex;
+    flex-direction: column;
+}
+.registerform>form>button,.loginform>form>button{
+    
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight:400;
+    color:white;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 4px 6px 4px 6px;
+    
+}
+
+
+.registerform>form>input{
+    padding:10px;
+    font-size: 13px;
+    margin: 10px 0 10px 0;
+}
+.opt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

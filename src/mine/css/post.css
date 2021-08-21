@@ -1,0 +1,42 @@
+.postc{
+    
+    background-color: white;
+    border:  solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 8px 0 !important;
+}
+.ptop{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid rgb(202, 202, 202) thin;    
+    margin-bottom: 10px;
+}
+.A{
+    height: 50px !important;
+    width: 50px !important;
+}
+.ptop>h4{
+    font-weight: 400;
+    margin: 2px 0 18px 15px;
+}
+
+.postdesc{
+    display: flexbox; 
+    word-break: break-word;
+
+}
+.postdesc>p{
+    
+    margin: 2px 2px 2px 10px;
+    text-align: justify;
+    font-weight: 400;
+    
+}
+
+.postattach>img{
+    object-fit:fill;
+    margin: 10px 10% 10px 10%;
+}
