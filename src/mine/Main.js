@@ -13,12 +13,14 @@ import { useSelector } from "react-redux";
 import { selectuser } from "../features/userSlice";
 import FlipMove from 'react-flip-move'
 import { Widget } from "./Widget";
+import { useRef } from "react";
 
 export const Main = () => {
 
   const user = useSelector(selectuser)
   const [entery, setentery] = useState('')
   const [posts, setposts] = useState([ ])
+  const ref=useRef(null)
 
   useEffect(() => {
     db.collection("posts").orderBy("timestamp","desc").onSnapshot(snap=>(
@@ -36,8 +38,8 @@ export const Main = () => {
 
 const publish = e =>{
   e.preventDefault();
-
- db.collection("posts").add(
+if(entery!==" " && entery)
+{ db.collection("posts").add(
    { 
      name:user.displayName,
      avatar:user.photoURL,
@@ -45,7 +47,7 @@ const publish = e =>{
      photourl: '' ,
      timestamp: firebase.firestore.FieldValue.serverTimestamp()
    }
- )
+ )}
  setentery("")
 
 }
@@ -95,8 +97,10 @@ const publish = e =>{
             <Avatar src={user.photoURL} className="Ava" />
             <div className="postinputcontainer">
               <form action="">
-                <input type="text" value={entery} onChange={e=>(setentery(e.target.value))}/>              
+                <input type="text" value={entery} onChange={e=>(setentery(e.target.value))}/>  
                 <button type="submit" onClick={publish}> send</button>
+                <input type="file" ref={ref} style={{display:"none"}} onClick={()=>{console.log("hogaya madadrchod")}} />
+                
               </form>
             </div>
           </div>
@@ -106,6 +110,7 @@ const publish = e =>{
               Icon={PhotoIcon}
               title="Photo"
               color="blue"
+              onClick= {() =>(  ref.current.click())}
             />
             <Posticon
               className="picon"

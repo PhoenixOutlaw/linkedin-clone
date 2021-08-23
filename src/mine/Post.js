@@ -7,7 +7,7 @@ import SendIcon from '@material-ui/icons/Send';
 import ShareIcon from '@material-ui/icons/Share';
 import { Posticon } from './Posticon';
 
-export const Post = forwardRef(({user,name,desc,url},ref) => {
+export const Post = forwardRef(({user,name,desc,addphoto},ref) => {
     return (
         <div ref={ref} className="postc">
           <div className="ptop">
@@ -18,7 +18,7 @@ export const Post = forwardRef(({user,name,desc,url},ref) => {
               { desc && <p>{desc}</p>}
           </div>
           <div className="postattach">
-              {url&& <img src={url} alt=""/>}
+              {addphoto&& <img src={addphoto} alt=""/>}
           </div>
           <div className="option">
               <Posticon Icon={ThumbUpIcon} title="Like"/>

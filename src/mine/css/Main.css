@@ -154,6 +154,7 @@
 .postinputcontainer{
     margin: 8px;
     flex: 1;
+    word-wrap: break-word;
     border: solid rgb(214, 214, 214);    
     display: flex;
     align-items: center;
