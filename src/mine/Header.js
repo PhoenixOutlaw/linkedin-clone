@@ -1,16 +1,16 @@
 import React from "react";
-import SearchIcon from '@material-ui/icons/Search';
-import "./css/header.css"
-import { Icon } from "./Icon";
-import HomeIcon from '@material-ui/icons/Home';
-import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
-import WorkIcon from '@material-ui/icons/Work';
-import MessageIcon from '@material-ui/icons/Message';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+import SearchIcon from '@mui/icons-material/Search';
+import HomeIcon from '@mui/icons-material/Home';
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
+import WorkIcon from '@mui/icons-material/Work';
+import MessageIcon from '@mui/icons-material/Message';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { logout, selectuser } from "../features/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { auth } from "./firebase";
+import { Icon } from "@mui/material";
+import "./css/header.css"
 
 export const Header = () => {
   const user = useSelector(selectuser);

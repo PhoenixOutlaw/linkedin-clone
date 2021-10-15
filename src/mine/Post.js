@@ -1,10 +1,11 @@
 import React, { forwardRef } from 'react'
-import { Avatar } from '@material-ui/core'
 import "./css/post.css"
-import ThumbUpIcon from '@material-ui/icons/ThumbUp';
-import CommentIcon from '@material-ui/icons/Comment';
-import SendIcon from '@material-ui/icons/Send';
-import ShareIcon from '@material-ui/icons/Share';
+
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import CommentIcon from '@mui/icons-material/Comment';
+import SendIcon from    '@mui/icons-material/Send';
+import ShareIcon from   '@mui/icons-material/Share';
+import { Avatar } from '@mui/material';
 import { Posticon } from './Posticon';
 
 export const Post = forwardRef(({user,name,desc,addphoto},ref) => {

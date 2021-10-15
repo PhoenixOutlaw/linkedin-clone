@@ -1,19 +1,20 @@
-import { Avatar } from "@material-ui/core";
+
 import React, { useEffect, useState } from "react";
-import "./css/Main.css";
-import PhotoIcon from "@material-ui/icons/Photo";
-import YouTubeIcon from "@material-ui/icons/YouTube";
-import EventAvailableIcon from "@material-ui/icons/EventAvailable";
-import AssignmentIcon from "@material-ui/icons/Assignment";
+import PhotoIcon from          "@mui/icons-material/Photo";
+import YouTubeIcon from        "@mui/icons-material/YouTube";
+import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import AssignmentIcon from     "@mui/icons-material/Assignment";
 import { Posticon } from "./Posticon";
 import { Post } from "./Post";
-import { db } from "./firebase";
 import firebase from "firebase";
+import { db } from "./firebase";
 import { useSelector } from "react-redux";
 import { selectuser } from "../features/userSlice";
-import FlipMove from 'react-flip-move'
 import { Widget } from "./Widget";
 import { useRef } from "react";
+import FlipMove from 'react-flip-move'
+import "./css/Main.css";
+import { Avatar } from "@mui/material";
 
 export const Main = () => {
 
