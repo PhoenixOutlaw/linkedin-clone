@@ -24,3 +24,8 @@
     padding: 0%;
     margin: 6px;
 }
+@media screen and (max-width:600px) {
+    .options{justify-content: space-evenly;}
+    .opicons>p{display: none;}
+    
+}

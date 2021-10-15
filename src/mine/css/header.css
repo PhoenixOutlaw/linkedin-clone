@@ -1,10 +1,9 @@
  .container{
      display: flex;
-     padding-top: 5px;
      justify-content: space-evenly;
      background-color: white;
-     border-bottom: rgb(155, 153, 153) solid thin;
-     position: fixed;
+     border-bottom: rgba(155, 153, 153, 0.349) solid thin;
+     position: sticky;
      width: 100%;
      z-index: 100;
      
@@ -12,19 +11,28 @@
 
  .left_nav{
      display: flex;
-     height: 48px;
-     width: 100px
- }
- .contain{
+     height: 35px;
+     width: 100px;
+     align-items: center;
      
-    height: 48px;
+    }
+    .left_nav>img{
+        flex: 0.4;
+        margin-right: 30px;
+        object-fit: contain;
+        height:inherit;
+    }
+    .contain{
+        padding-top:2px;
+        flex:0.6;
+        height: 48px;
     width: 195px;
      margin-top: 5px;
      display: flex;
      align-items: center;
-    background-color: whitesmoke;
-    border-radius: 4px;
-    height: 38px;
+     border-radius: 4px;
+     height: 38px;
+     background-color: whitesmoke;
     
  }
  .search{
@@ -37,20 +45,15 @@
     height: max-content !important;
 }
 .search>input{
-    
     background-color:transparent;
     border: none;
     outline: none;
 }   
  
- .left_nav>img{
-     padding: 5.5px;
-     margin-right: 5px;
-     object-fit: contain;
- }
  .right_nav{
      display: flex;
      color: gray;
+     align-items: center;
  }
  .extra{
      display: flex;
@@ -59,4 +62,11 @@
  }
  .extra{
      padding-left: 10px ;
+ }
+
+ @media screen and (max-width:1100px) {
+     .contain{
+         display: none;
+     }
+     
  }
