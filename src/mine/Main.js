@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import PhotoIcon from          "@mui/icons-material/Photo";
 import YouTubeIcon from        "@mui/icons-material/YouTube";
@@ -15,6 +14,8 @@ import { useRef } from "react";
 import FlipMove from 'react-flip-move'
 import "./css/Main.css";
 import { Avatar } from "@mui/material";
+
+
 
 export const Main = () => {
 

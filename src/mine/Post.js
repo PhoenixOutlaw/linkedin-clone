@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react'
 import "./css/post.css"
-
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import CommentIcon from '@mui/icons-material/Comment';
 import SendIcon from    '@mui/icons-material/Send';

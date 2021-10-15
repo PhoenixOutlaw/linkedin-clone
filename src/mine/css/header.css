@@ -25,9 +25,9 @@
     .contain{
         padding-top:2px;
         flex:0.6;
-        height: 48px;
+        height: 26px !important;
     width: 195px;
-     margin-top: 5px;
+     
      display: flex;
      align-items: center;
      border-radius: 4px;
@@ -54,6 +54,9 @@
      display: flex;
      color: gray;
      align-items: center;
+ }
+ .right_nav>.MuiSvgIcon-root{
+     border: solid black !important;
  }
  .extra{
      display: flex;

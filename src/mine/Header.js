@@ -9,8 +9,9 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { logout, selectuser } from "../features/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { auth } from "./firebase";
-import { Icon } from "@mui/material";
+import { Avatar} from "@mui/material";
 import "./css/header.css"
+import { Hicon } from "./Hicon";
 
 export const Header = () => {
   const user = useSelector(selectuser);
@@ -27,15 +28,15 @@ export const Header = () => {
         </div>
       </div>
       <div className="right_nav">
-        <Icon title="Home" Icon={HomeIcon}  />
-        <Icon title="My Network" Icon={SupervisorAccountIcon}  />
-        <Icon title="Jobs" Icon={WorkIcon}  />
-        <Icon title="Messaging" Icon={MessageIcon}  />
-        <Icon title="Notification" Icon={NotificationsIcon}  />
-        <Icon onclick={()=>{dispatch(logout());auth.signOut();}} user = {user.photoURL} fl={true}/>
+        <Hicon title="Home" Icon={HomeIcon}  />
+        <Hicon title="My Network" Icon={SupervisorAccountIcon}  />
+        <Hicon title="Jobs" Icon={WorkIcon}  />
+        <Hicon title="Messaging" Icon={MessageIcon}  />
+        <Hicon title="Notification" Icon={NotificationsIcon}  />
+        <Hicon onclick={()=>{dispatch(logout());auth.signOut();}} user = {user.photoURL} fl="true"/>
         <div className="extra">
-        <Icon title="Work" Icon={MoreVertIcon}  />
-        <Icon title ="try premium for free"/>
+        <Hicon title="Work" Icon={MoreVertIcon}  />
+        <Hicon title ="try premium for free"/>
         </div>
      
       </div>

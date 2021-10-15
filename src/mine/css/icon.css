@@ -4,9 +4,7 @@
 }
 .icons:hover{cursor:pointer;}
 .icon{
-    
-    height: max-content;
-    
+    height:30px;
 }
 .icons>p{
     margin: 0px;
